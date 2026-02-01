@@ -65,4 +65,39 @@ print(f"the addition of {num1} and {num2} is: {addition}")
 print(f"the subtraction of {max(num1,num2)} and {min(num1,num2)} is : {subtraction}")
 print(f"the multiplication of {num1} and {num2} is : {multiplication}")
 print(f"the division of {num1} and {num2} is : {division}")
-
+#Q12.) Write a Python program to demonstrate comparison operators: equal to, not equal to, greater than, less than.
+num1 = int(input("enter the 1st number:- "))
+num2 = int(input("Enter the 2nd number:- "))
+if num1 != num2:
+    print("num1 is not equal to num2")
+elif num1 == num2:
+    print("num1 is equal to num2")
+elif num1 > num2:
+    print("num1 is greater than num2")
+elif num1 < num2:
+    print("num2 is greater than num2")
+#Q13.) Write a Python program to demonstrate logical operators: and, or, not.
+num1 = int(input("Enter the 1st number:- "))
+num2 = int(input("Enter the 2nd number:- "))
+if num1 != num2 and num1 > num2:
+    print("num1 is greater than num2")
+elif num1 != num2 and num1 < num2:
+    print("num2 is greater than num1")
+elif num1 == num2 or 1<2:
+    print("num1 is equal to num2")
+lst1 = [1,2,3]
+if num1 not in lst1:
+    print("num1 is not in lst1")
+else:
+    print("num1 is in lst1")
+#Q14.) Write a Python program to calculate the square of a number.
+num = int(input("enter the number whose square you want to print :- "))
+print(f"the square of the number is :- {num**2}")
+#Q15.) Write a Python program to check if a number is even or odd.
+num = int(input("enter the number :-"))
+is_even = True
+if num % 2 == 0:
+    is_even = True
+else:
+    is_even = False
+print(is_even)
