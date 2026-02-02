@@ -5,7 +5,7 @@ user_input = input("enter anything")
 print(user_input)
 #Q3.) Write a Python program to check if a number is positive, negative, or zero.
 num = int(input("enter a number"))
-result = "numis =+ve" if num > 0 else "num is -ve"
+result = "num is =+ve" if num > 0 else "num is -ve"
 print(result)
 #Q4.) Write a Python program to find the largest of three numbers.
 num1 = int(input("enter a number"))
@@ -26,7 +26,7 @@ if num == 0 or num == 1:
 else:
     i=1
     while(i<num):
-        factorial = num*(i)
+        factorial = num*i
         i += 1
     print(f"the factorial of {num} is {factorial}")
 #Q6.) Create variables of different data types: integer, float, string, and boolean. Print their values and types.
@@ -101,3 +101,42 @@ if num % 2 == 0:
 else:
     is_even = False
 print(is_even)
+#Q16.) Write a Python program to find the sum of the first n natural numbers.
+total_number = int(input("enter the number :-"))
+sum = 0
+for i in range(0,total_number):
+    sum = sum + i
+print(sum)
+#Q17.) Write a Python program to check if a year is a leap year.
+year = int(input("enter the year :- "))
+if year % 4 == 0 :
+    print(f"{year} is an leap year")
+else :
+    print(f"{year} is not a leap year")
+#Q18.) Write a Python program to reverse a string.
+Random_string = input("enter a random word :- ")
+list1 = list(Random_string)
+list2 = []
+for i in range(0, len(list1)):
+    list2.append(list1[4-i])
+new_string = "".join(list2)
+print(new_string)
+#Q19.) Write a Python program to check if a string is a palindrome
+Random_string = input("enter a random word :- ")
+if Random_string == Random_string[::-1]:
+    print(f"{Random_string} is a palindrome ")
+else :
+    print(f"{Random_string} is not a palindrome")
+#Q20.) Write a Python program to sort a list of numbers in ascending order.
+list1 = [2, 3, 1, 5]
+list2 = []
+for i in range(len(list1)):
+    max_num = list1[0]
+    for x in list1:
+        if x > max_num:
+            max_num = x
+    list2.append(max_num)
+    list1.remove(max_num)
+print(list2)
+
+
